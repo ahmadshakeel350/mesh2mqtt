@@ -43,7 +43,6 @@ class MeshtasticBot:  # pylint:disable=too-many-instance-attributes
         :return:
         """
         self.logger = logger
-        self.writer.set_logger(self.logger)
 
     def on_connection(self, interface: meshtastic_serial_interface.SerialInterface, topic=pub.AUTO_TOPIC) -> None:
         """
